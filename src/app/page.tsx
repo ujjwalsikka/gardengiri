@@ -46,9 +46,9 @@ const SERVICES_DATA = {
 };
 
 const HERO_IMAGES = [
-  "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80", // Office Plants Luxury
-  "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1600&q=80", // Luxury Hotel Entrance
-  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80"  // Premium Villa Landscape
+  "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80", 
+  "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1600&q=80", 
+  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80"  
 ];
 
 export default function GardenGiriApp() {
@@ -76,10 +76,9 @@ export default function GardenGiriApp() {
       <header className="w-full sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-stone-200/80 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
+            {/* Image Logo Node */}
             <div className="flex items-center cursor-pointer" onClick={() => scrollToSection("home")}>
-              <span className="font-serif text-2xl font-bold tracking-wide text-emerald-800">
-                Garden<span className="text-stone-600 font-light">Giri</span>
-              </span>
+              <img src="/GGFixedLogo.png" alt="GardenGiri Logo" className="h-20 w-auto object-contain" />
             </div>
 
             {/* Desktop Navigation */}
@@ -152,10 +151,10 @@ export default function GardenGiriApp() {
                   Premium Space Architecture
                 </span>
                 <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight max-w-3xl leading-tight">
-                  Transforming <br />Spaces with Nature
+                  Why Modern Architecture Demands GardenGiri
                 </h1>
                 <p className="mt-4 text-stone-200 max-w-lg text-sm sm:text-base font-light tracking-wide">
-                  Luxury indoor living installations, corporate biophilic designs, and breathtaking landscaping tailor-made for institutional environments.
+                  Where execution expertise meets biological intelligence.
                 </p>
                 <div className="mt-8 flex flex-wrap gap-4">
                   <button 
@@ -399,22 +398,22 @@ export default function GardenGiriApp() {
                     <div className="space-y-4 text-xs text-stone-600">
                       <div className="flex items-start gap-3">
                         <MapPin size={16} className="text-emerald-700 mt-0.5" />
-                        <p>104-108, Greenhouse Enclave, Corporate District, New Delhi, India</p>
+                        <p>Gaur Square Building, Baba Market, Govindpuram, Ghaziabad</p>
                       </div>
                       <div className="flex items-center gap-3">
                         <Phone size={16} className="text-emerald-700" />
-                        <p>+91 98765 43210 / +91 11 2345 6789</p>
+                        <p>+91 8750195499 / +91 8076215194</p>
                       </div>
                       <div className="flex items-center gap-3">
                         <Mail size={16} className="text-emerald-700" />
-                        <p>concierge@gardengiri.com</p>
+                        <p>info@gardengiri.com</p>
                       </div>
                     </div>
                   </div>
 
                   {/* WhatsApp Quick Trigger Button */}
                   <a 
-                    href="https://wa.me/919876543210?text=Hello%20GardenGiri,%20I%20want%20to%20consult%20for%20a%20green%20space."
+                    href="https://wa.me/918750195499?text=Hello%20GardenGiri,%20I%20want%20to%20consult%20for%20a%20green%20space."
                     target="_blank"
                     rel="noreferrer"
                     className="flex items-center justify-center gap-2 w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-3 rounded-lg text-xs tracking-wider uppercase transition-all"
@@ -457,7 +456,7 @@ export default function GardenGiriApp() {
 
       {/* --- FLOATING WHATSAPP BUTTON --- */}
       <a 
-        href="https://wa.me/919876543210?text=Hi%20GardenGiri"
+        href="https://wa.me/918750195499?text=Hi%20GardenGiri"
         target="_blank"
         rel="noreferrer"
         className="fixed bottom-6 right-6 z-50 bg-emerald-600 hover:bg-emerald-500 text-white p-3.5 rounded-full shadow-xl transition-transform hover:scale-110 flex items-center justify-center"
@@ -470,9 +469,10 @@ export default function GardenGiriApp() {
       <footer className="w-full bg-stone-950 text-stone-400 py-12 border-t border-stone-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
-            <span className="font-serif text-xl font-bold tracking-wide text-white block mb-3">
-              Garden<span className="text-emerald-500">Giri</span>
-            </span>
+            {/* Footer Image Logo Node */}
+            <div className="block mb-3">
+              <img src="/GGlogo.png" alt="GardenGiri Logo" className="h-12 w-auto object-contain brightness-0 invert" />
+            </div>
             <p className="text-[11px] leading-relaxed text-stone-500">
               Premium biological installations, luxury interior plant scapes, and structured exterior botanical management systems for tier-1 environments.
             </p>
@@ -496,7 +496,7 @@ export default function GardenGiriApp() {
           <div>
             <h4 className="text-stone-200 text-xs font-bold uppercase tracking-wider mb-3">Reach Us Directly</h4>
             <p className="text-[11px] text-stone-500 mb-2">Have a blueprint or layout design ready to submit?</p>
-            <p className="text-xs text-stone-300 font-medium">concierge@gardengiri.com</p>
+            <p className="text-xs text-stone-300 font-medium">info@gardengiri.com</p>
           </div>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-stone-900 pt-6 text-center text-[11px] text-stone-600 flex flex-col sm:flex-row items-center justify-between gap-4">
